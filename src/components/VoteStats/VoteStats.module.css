@@ -1,0 +1,10 @@
+.container { border-top: 1px solid #d8cbc3; padding-top: 22px; }
+.heading, .positive, .stat { display: flex; align-items: center; justify-content: space-between; }
+.heading { margin-bottom: 18px; } .label { color: #8b7d75; font-size: .75rem; letter-spacing: .1em; text-transform: uppercase; }
+.total { color: #2d2926; font-family: Georgia, 'Times New Roman', serif; font-size: 2rem; font-weight: 400; }
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+.stat { min-height: 72px; margin: 0; padding: 12px; border-radius: 10px; flex-direction: column; align-items: flex-start; }
+.stat span { font-size: .78rem; } .stat strong { font-family: Georgia, 'Times New Roman', serif; font-size: 1.9rem; font-weight: 400; }
+.good { background: #e7f0e3; color: #33553c; } .neutral { background: #f2ecdf; color: #725f3d; } .bad { background: #f5e1da; color: #8a4434; }
+.positive { margin-top: 16px; color: #716963; font-size: .85rem; } .positive strong { color: #b7653c; font-size: 1.15rem; }
+@media (max-width: 420px) { .stats { gap: 6px; } .stat { padding: 9px; } }

@@ -1,0 +1,7 @@
+.app { position: relative; min-height: 100vh; overflow: hidden; background: #f4eee7; color: #2d2926; }
+.app::before { position: absolute; inset: 0 0 0 48%; background: #e7ddd3; content: ''; }
+.layout { position: relative; display: grid; grid-template-columns: minmax(0, 1fr) minmax(320px, 430px); gap: clamp(48px, 9vw, 150px); align-items: center; max-width: 1180px; min-height: calc(100vh - 70px); margin: 0 auto; padding: 80px 7vw; }
+.feedback { display: grid; gap: 30px; padding: 38px; border: 1px solid rgba(124, 96, 78, .18); border-radius: 18px; background: rgba(255, 252, 248, .72); box-shadow: 0 25px 80px rgba(92, 66, 49, .11); backdrop-filter: blur(8px); }
+.decor { position: absolute; top: 9vh; left: 5vw; color: #b7653c; font-size: 5rem; line-height: 1; transform: rotate(15deg); }
+.footer { position: relative; padding: 0 7vw 25px; color: #9b8d84; font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; }
+@media (max-width: 760px) { .app::before { inset: 55% 0 0; } .layout { grid-template-columns: 1fr; gap: 54px; padding: 70px 24px 50px; } .decor { top: 20px; right: 28px; left: auto; font-size: 3rem; } .feedback { padding: 26px; } .footer { padding: 0 24px 22px; } }
